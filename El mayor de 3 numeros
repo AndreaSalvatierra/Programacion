@@ -1,0 +1,32 @@
+/ / Ejercicios.cpp: Define el punto de entrada para la aplicación de consola.
+/ / Autor: Andrea Salvatierra
+/ / Fecha: 20/03/14
+
+# Include "stdafx.h"
+# Include <iostream>
+# Include "conio.h"
+# Include "math.h"
+
+using namespace std;
+
+void main ()
+{Int a, b, c;
+cout << "Ingrese a:";
+cin >> a;
+cout << "Ingrese b:";
+cin >> b;
+cout << "Ingrese c:";
+cin >> c;
+if (a> b)
+if (a> c)
+cout << "es el alcalde:" << a;
+más
+cout << "es el alcalde:" << c;
+más 
+if (b> c)
+cout << "es el alcalde:" << b;
+más
+cout << "es el alcalde:";
+getch ();
+
+}
