@@ -21,3 +21,32 @@ for (i=1;i<=N;i++)
 cout<< "la Suma de los "<< N <<" de los primeros cuadrados naturales es: " << suma;
 getch();
 }
+
+SERIE REPETITIVA:
+// Series Naturales.cpp : Defines the entry point for the console application.
+//Autor:Andrea Salvtierra 
+//Fecha:01/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+int suma,N;
+float i;
+cout<< "Ingresar el valor de N: ";
+cin >> N;
+suma=0;
+cout<<"\nSuma= ";
+for (i=1;i<=N;i++)
+{
+    suma=suma+pow(i,2);
+	cout << i <<"**2 + ";
+}
+cout<< "\n\nLa Suma de los "<< N <<" de los primeros cuadrados naturales es: " << suma;
+getch();
+}
