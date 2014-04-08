@@ -1,0 +1,65 @@
+// Parciales.cpp : Defines the entry point for the console application.
+//Autor: Andrea Salvatierra
+//Fecha:08/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+
+{
+ float parcial1,parcial2,parcial3,practica,final,NF;
+
+do
+{
+	cout<< "Introducir Parcial 1: ";
+	cin>> parcial1;
+}
+while((parcial1>100 || parcial1<0)&&(parcial1!=-99));
+
+while(parcial1!=-99)
+
+do
+{
+	cout<< "Introducir Parcial 2: ";
+	cin>> parcial2;
+}
+while(parcial2>100 || parcial2<0);
+
+do
+{
+	cout<< "Introducir Parcial 3: ";
+	cin>> parcial3;
+}
+	while (parcial3>100 || parcial3<0);
+
+do
+{
+	cout<< "Introducir Practica: ";
+	cin>>practica;
+}
+    while(practica>100 || practica<0);
+
+do
+{
+	cout<< "Introducir Nota Final: ";
+	cin>> final;
+}
+	while(final>100 || final<0);
+    
+	NF = ((parcial1+parcial2+parcial3)/3)*0.4+practica*0.2+final*0.4;
+	cout<< "Nota Final: ";
+	cin>> NF;
+
+	do
+	{
+		cout<< "Introducir Parcial 1: ";
+		cin>> parcial1;
+	}
+	while((parcial1>100 || parcial1<0)&&(parcial1!=-99));
+
+	getch();
+}
