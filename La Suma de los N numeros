@@ -1,0 +1,26 @@
+// Suma de los N numeros.cpp : Defines the entry point for the console application.
+//Autor:Andrea Salvatierra
+//Fecha:15/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+float N,s,i,cont;
+cout<< "ingrese N: ";
+cin>> N;
+s=0;
+cont=2;
+i=1;
+while (i<=N)
+{
+       s=s+cont;
+       cont=cont+2;
+	   i=i+1;
+}
+cout<< s;
+getch();
+}
