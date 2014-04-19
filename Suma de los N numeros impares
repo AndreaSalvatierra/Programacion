@@ -1,0 +1,21 @@
+// Suma de los N numeros enteros impares.h
+//Autor: Andrea Salvatierra
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int i,N,suma;
+	cout << "introducir N: ";
+	cin>>N;
+	suma=0;
+		for(i=1;i<=N;i++)
+			suma=suma+(i*2+1);
+	cout << "Suma de los primeros numeros enteros: ";
+	cout  << suma;
+	getch();
+}
