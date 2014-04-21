@@ -1,6 +1,3 @@
-// menudeoperaciones.cpp : Defines the entry point for the console application.
-// autor kevin leandro espada zaballa
-
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
