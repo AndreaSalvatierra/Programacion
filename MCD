@@ -1,3 +1,6 @@
+//Autor: Andrea Salvatierra
+//Fecha: 22/04/14
+
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -15,27 +18,28 @@ void main()
   cout<< "\n\nIngrese el valor de C: ";
   cin>> c;
   if((a<b)&&(a<c))
-	  menor = a;
+menor = a;
   else
-	  if((b<a)&&(b<c))
-		menor = b;
-	  else 
-		  menor = c;
+if((b<a)&&(b<c))
+menor = b;
+else
+menor = c;
   MCD = 1;
   cont = 2;
- while (cont <= menor)
+ while (cont<=menor)
  {
-	 if((a % cont==0)&&(b % cont==0)&&(c & cont==0))
-	 {
-		 a = a/cont;
-		 b = b/cont;
-		 c = c/cont;
-		 menor = menor/cont;
-		 MCD = MCD*cont;
-		 cont = cont-1;
-	 }
+if((a % cont==0)&&(b % cont==0)&&(c %cont==0))
+{
+a = a/cont;
+b = b/cont;
+c = c/cont;
+menor = menor/cont;
+MCD = MCD*cont;
+cont=cont-1;
+}
  cont = cont+1;
  }
+ cout<< "\n\El MCD es: ";
  cout<< MCD;
  getch();
 }
