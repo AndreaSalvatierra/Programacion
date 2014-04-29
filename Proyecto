@@ -1,0 +1,26 @@
+// Proyecto.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+int N,u,d,c,m;
+cout << "Introducir N: ";
+cin  >> N;
+if(N<10000)
+    u=N%10;
+	    cout<<u;
+    d=N%100;
+	    cout<<d;
+	c=N%1000;
+	    cout<<c;
+	m=N%10000;
+		cout<<m;
+	
+getch();
+}
