@@ -1,0 +1,32 @@
+# Include "stdafx.h"
+# Include <iostream>
+# Include "conio.h"
+# Include "math.h"
+using namespace std;
+
+void main ()
+{
+flotar Hora, Minuto, Segundo, hora, min, seg, t, r, p;
+cout << "Ingrese el valor de las horas del reloj de imprimación:";
+cin >> Hora;
+cout << "Ingrese el valor de Los Minutos del Reloj imprimación:";
+cin >> Minuto;
+cout << "Ingrese el valor de Los Segundos de reloj imprimación:";
+cin >> Segundo;
+cout << "Ingrese el valor de las horas del reloj second:";
+cin >> hora;
+cout << "Ingrese el valor de los Minutos del Segundo reloj:";
+cin >> min;
+cout << "Ingrese el valor de los Segundos del Segundo reloj:";
+cin >> seg;
+if ((Hora <24) && (hora <24))
+   t = hora * 3600-Hora * 3600;
+cout << t;
+if ((Minuto <60) && (min <60))
+   R = min * 60-Minuto * 60;
+cout << r;
+si ((Segundo <60) && (seg <60))
+  p = seg-Segundo;
+cout << p;
+getch ();
+}
