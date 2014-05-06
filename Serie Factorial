@@ -1,0 +1,31 @@
+// Serie Factorial.cpp : Defines the entry point for the console application.
+//Autor:Andrea Salvatierra
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+float suma,x,f,p;
+int N,i;
+cout<< "Ingresar N: ";
+cin>>N;
+cout<< "Ingresar x: ";
+cin>>x;
+suma=7;
+p=1;
+for(i=1;i<=N;i=i++)
+{
+	if(i%2==0)
+		suma=suma-(pow(x,i)/((i+1)*p));
+	else
+	    suma=suma+(pow(x,i)/((i+1)*p));
+	p=p*(i+1);
+}
+cout<< "La suma de los primeros numeros por horner: ";
+cout<<suma;
+getch();
+}
