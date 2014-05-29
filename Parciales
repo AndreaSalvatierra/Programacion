@@ -11,55 +11,54 @@ using namespace std;
 void main()
 
 {
- float parcial1,parcial2,parcial3,practica,final,NF;
+ float p1,p2,p3,np,ef,NF;
 
 do
 {
 	cout<< "Introducir Parcial 1: ";
-	cin>> parcial1;
+	cin>> p1;
 }
-while((parcial1>100 || parcial1<0)&&(parcial1!=-99));
+while((p1>100 || p1<0))
 
-while(parcial1!=-99)
 
 do
 {
 	cout<< "Introducir Parcial 2: ";
-	cin>> parcial2;
+	cin>> p2;
 }
-while(parcial2>100 || parcial2<0);
+while(p2>100 || p2<0);
 
 do
 {
 	cout<< "Introducir Parcial 3: ";
-	cin>> parcial3;
+	cin>> p3;
 }
-	while (parcial3>100 || parcial3<0);
+	while (p3>100 || p3<0);
 
 do
 {
 	cout<< "Introducir Practica: ";
-	cin>>practica;
+	cin>>np;
 }
-    while(practica>100 || practica<0);
+    while(np>100 || np<0);
 
 do
 {
 	cout<< "Introducir Nota Final: ";
-	cin>> final;
+	cin>> ef;
 }
-	while(final>100 || final<0);
+	while(ef>100 || ef<0);
     
-	NF = ((parcial1+parcial2+parcial3)/3)*0.4+practica*0.2+final*0.4;
+	NF = ((p1+p2+p3)/3)*0.4+np*0.2+ef*0.4;
 	cout<< "Nota Final: ";
 	cin>> NF;
 
 	do
 	{
 		cout<< "Introducir Parcial 1: ";
-		cin>> parcial1;
+		cin>> p1;
 	}
-	while((parcial1>100 || parcial1<0)&&(parcial1!=-99));
+	while((p1>100 || p1<0))
 
 	getch();
 }
