@@ -17,7 +17,7 @@ cout<< "Ingresar x: ";
 cin>>x;
 suma=7;
 p=1;
-for(i=1;i<=N;i=i++)
+for(i=1;i<=N;i++)
 {
 	if(i%2==0)
 		suma=suma-(pow(x,i)/((i+1)*p));
