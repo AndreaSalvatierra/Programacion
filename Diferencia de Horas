@@ -1,7 +1,7 @@
 # Include "stdafx.h"
 # Include <iostream>
 # Include "conio.h"
-# Include "math.h"
+
 using namespace std;
 
 void main ()
@@ -30,3 +30,4 @@ si ((Segundo <60) && (seg <60))
 cout << p;
 getch ();
 }
+
